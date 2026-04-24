@@ -89,15 +89,14 @@ Roll initiative for each PC (d20 + DEX modifier) and any relevant NPCs. Establis
 
 When spawning a player subagent, their prompt must contain exactly these things, in this order:
 
-1. **Who they are**: the full contents of their character file
-2. **What they remember**: the full contents of their journal
-3. **What has happened**: the full contents of `game/world/story-so-far.md`
-4. **Where they are right now**: the full contents of `game/world/current-state.md`
-5. **The current situation**: your scene prompt — what is happening this moment, what they need to respond to, and verbatim any dialogue or actions from other characters who have already acted this scene/round
+1. **How to play**: the full contents of `game/meta/player-instructions.md`
+2. **Who they are**: the full contents of their character file
+3. **What they remember**: the full contents of their journal
+4. **What has happened**: the full contents of `game/world/story-so-far.md`
+5. **Where they are right now**: the full contents of `game/world/current-state.md`
+6. **The current situation**: your scene prompt — what is happening this moment, what they need to respond to, and verbatim any dialogue or actions from other characters who have already acted this scene/round
 
-Instruct the player agent to: make the decision their *character* would make, not the optimal game decision. A character with a flaw should act on that flaw. Authentic character play produces better drama than optimal play.
-
-Player agents are stateless — they have no memory except what you inject. Everything they know comes from these five inputs.
+Player agents are stateless — they have no memory except what you inject. Everything they know comes from these six inputs.
 
 ---
 
